@@ -1,4 +1,3 @@
-Name
 Bulbasaur
 Ivysaur
 Venusaur
