@@ -1,2 +1,2 @@
 # mewbotfishcheat
-simple script to get answers in mewbot fishing
+simple codes to get answers in mewbot fishing
