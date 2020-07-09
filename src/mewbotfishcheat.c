@@ -87,8 +87,10 @@ int main()
         
         if (user_input[0] == '\n' || user_input[0] == '\0' || user_input[0] == 0){
             printf("emptry string\n");
-            system("pause");
-            return 1;
+            memset(user_input, 0, sizeof(user_input));
+            found = 0;
+            printf("\n\n");
+            continue;
         }
 
         len = get_length_char(user_input);
