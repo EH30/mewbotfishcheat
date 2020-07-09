@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 int pos[100];
 
@@ -75,41 +76,50 @@ int name_match(char* name, char* tomatch){
 int main()
 {
     print_name();
+    int len;
     int found = 0;
     char user_input[100];
     char filename[100] = "poke_names.txt";
 
-    printf("Enter (exmaple: p_ka_hu): ");
-    fgets(user_input, sizeof(user_input), stdin);
-
-    if (user_input[0] == '\n' || user_input[0] == '\0' || user_input[0] == 0){
-        printf("emptry string\n");
-        system("pause");
-        return 1;
-    }
-
-    get_pos(user_input);
-
-    char *lower_userin = to_lower(user_input);
-    FILE* fptr;
-
-    if ((fptr = fopen(filename, "r")) == NULL){
-        printf("error opening file\n");
-        system("pause");
-        return 1;
-    }
-    
-    char buff[100];
-
-    while (fgets(buff, 100, fptr)){
-        if (name_match(to_lower(buff), lower_userin) == 0){
-            printf("%s\n", buff);
-            found++;
+    while (1){
+        printf("Enter (exmaple: p_ka_hu): ");
+        fgets(user_input, sizeof(user_input), stdin);
+        
+        if (user_input[0] == '\n' || user_input[0] == '\0' || user_input[0] == 0){
+            printf("emptry string\n");
+            system("pause");
+            return 1;
         }
-    }
 
-    if (found == 0){
-        printf("name not found\n");
+        len = get_length_char(user_input);
+        get_pos(user_input);
+        
+        char *lower_userin = to_lower(user_input);
+        FILE* fptr;
+        
+        if ((fptr = fopen(filename, "r")) == NULL){
+            printf("error opening file\n");
+            system("pause");
+            return 1;
+        }
+        
+        char buff[100];
+        
+        while (fgets(buff, 100, fptr)){
+            if (name_match(to_lower(buff), lower_userin) == 0 && get_length_char(buff) == len){
+                printf("%s\n", buff);
+                found++;
+            }
+        }
+        
+        if (found == 0){
+            printf("name not found\n");
+        }
+        
+        memset(user_input, 0, sizeof(user_input));
+        found = 0;
+        
+        printf("\n\n");
     }
 
     system("pause");
