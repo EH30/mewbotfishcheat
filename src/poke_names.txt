@@ -1,4 +1,3 @@
-Generation I
 Kdex
 Bulbasaur
 Ivysaur
@@ -34,6 +33,7 @@ Sandshrew
 Sandslash
 Sandslash
 Nidoran�
+Nidoran
 Nidorina
 Nidoqueen
 Nidoran�
@@ -180,7 +180,6 @@ Dragonair
 Dragonite
 Mewtwo
 Mew
-Generation II
 Jdex
 Chikorita
 Bayleef
@@ -282,9 +281,8 @@ Larvitar
 Pupitar
 Tyranitar
 Lugia
-HoOh
+Ho-Oh
 Celebi
-Generation III
 Hdex
 Treecko
 Grovyle
@@ -429,7 +427,6 @@ Deoxys
 Deoxys
 Deoxys
 Deoxys
-Generation IV
 Sdex
 Turtwig
 Grotle
@@ -524,7 +521,7 @@ Leafeon
 Glaceon
 Gliscor
 Mamoswine
-PorygonZ
+Porygon-Z
 Gallade
 Probopass
 Dusknoir
@@ -551,7 +548,6 @@ Darkrai
 Shaymin
 Shaymin
 Arceus
-Generation V
 Udex
 Victini
 Snivy
@@ -720,13 +716,10 @@ Keldeo
 Meloetta
 Meloetta
 Genesect
-Generation VI
 CeCoMo
 Kdex
 Ce
-Co
 Mo
-Generation VII
 Adex
 Rowlet
 Dartrix
@@ -791,9 +784,9 @@ Mimikyu
 Bruxish
 Drampa
 Dhelmise
-Jangmoo
-Hakamoo
-Kommoo
+Jangmo-o
+Hakamo-o
+Kommo-o
 Tapu
 Tapu
 Tapu
@@ -817,9 +810,6 @@ Naganadel
 Stakataka
 Blacephalon
 Zeraora
-Meltan
-Melmetal
-Generation VIII
 Gdex
 Grookey
 Thwackey
@@ -904,14 +894,6 @@ Zacian
 Zamazenta
 Zamazenta
 Eternatus
-Kubfu
-Urshifu
-Urshifu
-Zarude
-Calyrex
-Regieleki
-Regidrago
-Extra Names
 VenusaurMega Venusaur
 CharizardMega Charizard X
 CharizardMega Charizard Y
@@ -973,7 +955,6 @@ Mime Jr.
 GarchompMega Garchomp
 LucarioMega Lucario
 AbomasnowMega Abomasnow
-Porygon-Z
 GalladeMega Gallade
 RotomHeat Rotom
 RotomWash Rotom
