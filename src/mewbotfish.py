@@ -27,9 +27,8 @@ class FishCheat:
         pos = self.get_pos(user_input, [])
         temp = None
         for line in self.jdata[str(len(user_input))]:
-            if len(line) == len(user_input):
-                temp = self.match_name(line.lower(), user_input.lower(), pos)
-                if temp == 0:
-                    out.append(line.lower())
+            temp = self.match_name(line.lower(), user_input.lower(), pos)
+            if temp == 0:
+                out.append(line.lower())
         
         return out
